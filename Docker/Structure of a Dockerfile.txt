@@ -1,0 +1,17 @@
+# Build this image from a base image
+FROM {container}:{tag}
+
+# Copy files or directories from source and adds them to 
+# filesystem of the container at the path destination
+# COPY is executed on the host
+COPY {source} {destination}/
+
+# Set working directory for all following commands
+WORKDIR {path}
+
+# Execute any command in shell inside the container environment
+RUN {command}
+
+# Instruction to be executed when Docker container starts
+# There can be only one 'CMD' instruction in a Dockerfile
+CMD ["{executable}", "{parameter}"]

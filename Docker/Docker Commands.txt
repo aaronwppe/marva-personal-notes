@@ -1,0 +1,42 @@
+docker images
+List all Docker images
+
+docker ps
+List running containers
+
+docker ps -a
+List all containers - stopped and running
+Alternatively, we may use '--all'
+
+docker pull {name}:{tag}
+Pull an image from a registry
+
+docker run {name}:{tag}
+Creates a container from given image and starts it
+
+docker run -d {name}:{tag}
+Runs container in background and prints the container ID
+Alternatively, we may use '--detach'
+
+docker run -p {HOST_PORT}:{CONTAINER_PORT} {name}:{tag}
+Publish a container's port to the host - port binding
+Alternatively, we may use '--publish'
+
+docker run --name {container name} {name}:{tag}
+Assign a name to the container
+Alternatively, we may use '--publish'
+
+docker logs {container}
+View logs from service running inside the container -
+which are present at time of execution
+
+docker stop {container}
+Stop one or more running containers
+
+docker start {container}
+Start a container
+
+docker build -t {path to Dockerfile}
+Build a Dockerfile and create its image
+Set a name and optionally a tag in the "name:tag" format
+Alternatively, we may use '--tag'
