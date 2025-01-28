@@ -1,0 +1,36 @@
+# Python
+*.pyc
+*.pyo
+__pycache__/
+
+# Django database files
+db.sqlite3
+
+# Virtual Environment
+venv/
+env/
+
+# Log files
+*.log
+
+# Static and Media files
+/static/
+/media/
+
+# IDE and Editor settings
+.vscode/
+.idea/
+
+# Docker related files (optional)
+docker-compose.override.yml
+
+# Local environment variables
+.env
+
+# Coverage and testing files
+*.coverage
+*.pytest_cache/
+
+# Miscellaneous
+*.swp
+*.sublime-project

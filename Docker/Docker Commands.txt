@@ -24,7 +24,6 @@ Alternatively, we may use '--publish'
 
 docker run --name {container name} {name}:{tag}
 Assign a name to the container
-Alternatively, we may use '--publish'
 
 docker logs {container}
 View logs from service running inside the container -
@@ -33,10 +32,17 @@ which are present at time of execution
 docker stop {container}
 Stop one or more running containers
 
-docker start {container}
+docker start -a {container}
 Start a container
+Attaches to the container's standard input, output, and error streams
 
-docker build -t {path to Dockerfile}
+docker build -t {name of image} {path to Dockerfile}
 Build a Dockerfile and create its image
 Set a name and optionally a tag in the "name:tag" format
 Alternatively, we may use '--tag'
+
+docker remove {container}
+Removes a container
+
+docker rmi {image}
+Removes an image
