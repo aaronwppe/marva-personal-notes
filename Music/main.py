@@ -22,7 +22,7 @@ Re_note = Note(Re_symbol)
 notes_tuple = (Sa_note, Re_note)
 
 # generate our frequency dataframe 
-df = fg.generate_frequencies_df(root_freq=c4_freq, notes=notes_tuple)\
+df = fg.generate_frequencies_df(root_freq=c4_freq, notes=notes_tuple)
 
 # Uncomment to print generated dataframe
 # print(df)
